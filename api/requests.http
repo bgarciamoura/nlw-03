@@ -1,0 +1,24 @@
+GET http://localhost:3333 HTTP/1.1
+
+###
+
+POST http://localhost:3333/orphanages HTTP/1.1
+content-type: application/json 
+
+{
+    "name": "Lar Feliz",
+    "latitude": -23.6266713,
+	"longitude": -47.5854701,
+	"about": "Sobre o Lar feliz",
+	"instructions": "Venha visitar",
+	"opening_hours": "Das 8h até 18h",
+	"open_on_weekends": true
+}
+
+###
+GET http://localhost:3333/orphanages HTTP/1.1
+
+###
+GET http://localhost:3333/orphanages/7 HTTP/1.1
+
+###
